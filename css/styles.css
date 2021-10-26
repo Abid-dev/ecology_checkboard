@@ -1,0 +1,223 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: capitalize;
+}
+
+.overview {
+  color: white;
+  width: 100%;
+  height: 110vh;
+
+  position: relative;
+  background-image: linear-gradient(
+    to top,
+    #a8d9e9,
+    #85cae9,
+    #63b9ea,
+    #46a7eb,
+    #3794ea
+  );
+
+  /* background-image: url("../images/city_life.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.checkboard-logo-container {
+  width: 120;
+  height: 50px;
+
+  position: absolute;
+  top: 2%;
+  left: 1%;
+}
+
+.checkboard-logo {
+  width: 100%;
+  height: 100%;
+}
+
+.overview-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company-details {
+  height: 80%;
+  margin: auto 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.company-name {
+  text-align: center;
+  color: rgb(197, 224, 233);
+}
+
+.company-logo {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  color: rgb(16, 72, 94);
+  opacity: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #cdddf4;
+}
+
+.company-logo i {
+  font-size: 50px;
+}
+
+.company-website {
+  text-transform: lowercase;
+  padding-bottom: 6px;
+}
+
+.company-website-link {
+  text-decoration: none;
+  color: rgb(72 119 168);
+  padding-bottom: 3px;
+}
+
+.company-website-link:hover {
+  color: #1b647a;
+  border-bottom: 2px solid #1b647a;
+}
+
+.company-number {
+  color: rgb(197, 224, 233);
+  margin-top: 10px;
+}
+
+.company-overview {
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 40px;
+}
+
+.company-overview .badge,
+.company-overview .points,
+.company-overview .time {
+  /* border: 3px solid lightblue; */
+  /* background-color: lightskyblue; */
+
+  width: 250px;
+  height: 250px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 600;
+}
+
+.points {
+  border-right: 3px solid lightblue;
+  border-left: 3px solid lightblue;
+}
+
+.company-overview-icon {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  color: skyblue;
+  opacity: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #053a58;
+
+  font-size: 60px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.company-overview-icon:hover {
+  transform: scale(1.2);
+  transition: ease-in-out 0.5s;
+}
+
+.company-overview-title {
+  color: rgb(18, 7, 80);
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.company-overview-desc {
+  color: rgb(9, 4, 70);
+  text-align: center;
+  font-size: 14px;
+}
+
+#milestone-btn {
+  margin-top: 10px;
+  padding: 4px 10px;
+  font-weight: 550;
+  background: #60c3f2;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#milestone-btn:hover {
+  background: #99d9f7;
+  box-shadow: 5px 5px 15px 5px #52adff;
+}
+
+.milestones {
+  width: 100%;
+  height: 100vh;
+  /* background-color: rgb(255, 255, 255); */
+  background-image: linear-gradient(
+    to top,
+    #cfdee3,
+    #c6dde4,
+    #bcdce6,
+    #b2dae7,
+    #a8d9e9
+  );
+
+  /* display: none; */
+}
+
+.milestones .container {
+  background-image: url("../images/milestones_building.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
