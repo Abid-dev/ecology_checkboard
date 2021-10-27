@@ -218,8 +218,10 @@ h6 {
 }
 
 .milestones .container {
-  background-image: url("../images/milestones_building.svg");
+  /* background-image: url("../images/milestones_building.svg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+
 }
+
