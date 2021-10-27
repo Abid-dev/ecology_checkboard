@@ -59,6 +59,8 @@ h6 {
 .checkboard-logo {
   width: 100%;
   height: 100%;
+
+  display: none;
 }
 
 .overview-container {
