@@ -38,10 +38,15 @@ h3 {
   
   #building {
     width: 215px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     -webkit-transition: 0.22s width linear;
     -o-transition: 0.22s width linear;
     transition: 0.22s width linear;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
   
   .roof span {
