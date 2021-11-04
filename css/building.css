@@ -49,7 +49,7 @@
 
 .building-main {
   width: 100%;
-  height: 600px;
+  height: auto;
   background-color: #9da8b1;
   display: flex;
   justify-content: space-around;
@@ -69,17 +69,20 @@
   border-right: solid 2px white;
 }
 
+.window:hover {
+  transform: scale(1.1);
+}
+
 .floor {
   border-top: solid 5px rgb(2, 46, 71);
 }
 
 .g-floor {
   width: 100%;
-  height: 150px;
+  height: 200px;
   bottom: 0;
   position: relative;
   background-color: #9da8b1;
-
 }
 
 .tree-holder {
@@ -110,7 +113,7 @@
 .company-entrance {
   width: 35%;
   min-width: 250px;
-  height: 125px;
+  height: 150px;
   background-color: #175a80; 
   /* window color too */
   position: absolute;
@@ -143,24 +146,46 @@
 .doors {
   position: absolute;
   width: 70%;
-  height: 90px;
+  height: 110px;
   background-color: white;
   bottom: 0;
+  /* The following two are to centralise the entrance */
   left: 50%;
   transform: translateX(-50%);
-  display: flex;
-  justify-content: center;
-  background-color: rgb(2 46 71);
+  /* background-color: rgb(2 46 71); */
+  cursor: pointer;
 }
 
 .door {
   width: 50%;
-  height: 90px;
-  position: relative;
+  height: 110px;
+  background-color: rgb(2 46 71);
+  position: absolute;
+  bottom: 0;
+  transition: all 1.5s linear;
 }
 
 .left-door {
-  border-right: 2px solid rgb(151, 151, 182);
+  left: 0;
+  border-right: 2px solid rgb(151, 151, 182);  
+  transform-origin: left;
+}
+
+.right-door {
+  right: 0;
+  border-left: 2px solid rgb(151, 151, 182);
+  transform-origin: right;
+}
+
+.leftDoorOpen
+{
+  /*prespective creates the door open effect*/
+  transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-120deg);
+}
+
+.rightDoorOpen
+{
+  transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(120deg);
 }
 
 .middle-door {
