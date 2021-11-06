@@ -152,7 +152,6 @@
   /* The following two are to centralise the entrance */
   left: 50%;
   transform: translateX(-50%);
-  /* background-color: rgb(2 46 71); */
   cursor: pointer;
 }
 
